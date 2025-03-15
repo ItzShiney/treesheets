@@ -19,7 +19,7 @@ pub struct CellGrid {
     pub height: u32,
     pub border_color: Color,
     pub border_width: u32,
-    // TODO learn what actually this is and rename accordingly
+    // TODO: learn what actually this is and rename accordingly
     pub is_vertical_text_and_grid: bool,
     pub is_folded: bool,
     pub column_widths: Vec<u32>,
