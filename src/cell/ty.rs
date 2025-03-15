@@ -6,7 +6,7 @@ use {
     },
 };
 
-// TODO what is this?
+// TODO learn what actually this is and rename accordingly
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord)]
 pub enum CellType {
     Data,
