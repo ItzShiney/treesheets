@@ -7,7 +7,6 @@ edition = "2021"
 bitflags = "*"
 extended = "*"
 flate2 = "*"
-nonmax = "*"
 
 [lints.rust]
 unsafe_code = "forbid"
