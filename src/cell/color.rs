@@ -18,7 +18,7 @@ impl Color {
     where
         R: Read,
     {
-        let [r, g, b, _] = reader.read_bytes::<4>()?;
+        let [r, g, b, _] = reader.read_bytes()?;
         Ok(Self { r, g, b })
     }
 }
