@@ -1,7 +1,10 @@
 use {
     crate::DocumentReader,
     std::{
-        fmt::Debug,
+        fmt::{
+            self,
+            Debug,
+        },
         io::{
             self,
             Read,
@@ -27,7 +30,7 @@ impl Time {
 }
 
 impl Debug for Time {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{:?}", Duration::from_millis(self.millis))
     }
 }

@@ -1,7 +1,10 @@
 use {
     crate::reader::DocumentReader,
     std::{
-        fmt::Debug,
+        fmt::{
+            self,
+            Debug,
+        },
         io::{
             self,
             Read,
@@ -20,7 +23,7 @@ pub struct Image {
 }
 
 impl Debug for Image {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         f.debug_struct("Image")
             .field("ty", &self.ty)
             .field("scale", &self.scale)
